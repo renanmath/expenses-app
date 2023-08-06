@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "expenses-app"
+version = "0.1.0"
+description = ""
+authors = ["renan <renanmath13@gmail.com>"]
+readme = "README.md"
+packages = [{include = "expenses_app"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+expenses-opt = {git = "https://github.com/renanmath/expenses-optimizer.git"}
+flet = "^0.8.1"
+pendulum = "^2.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
